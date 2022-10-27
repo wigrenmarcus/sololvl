@@ -1,0 +1,171 @@
+/* setup style */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* overall styling */
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #222227;
+}
+
+/* default grid styling */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: #ffffff;
+}
+
+/* section styling */
+section {
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+/* section image styling */
+section img {
+    width: 25%;
+    float: left;
+    margin-right: 10px;
+    border: solid;
+    border-color: #6210fa;
+    border-width: 4px;
+    border-radius: 8px;
+}
+
+/* footer styling */
+footer {
+    display: flex;
+    background-color: #1a1425;
+    padding: 50px;
+    font-size: 1.5em;
+}
+
+footer h3, a {
+    margin: auto;
+}
+
+/* links with hover styling */
+.link {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* normal */
+.link::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    right: 0px;
+    bottom: -3px;
+    left: 0px;
+    background-color: #d81dd8;
+}
+
+/* hovering */
+.link:hover {
+    color: #d81dd8;
+}
+
+/* change normal while hovering */
+.link:hover::before {
+    background: linear-gradient(to right, #d81dd8 40%, #6210fa 75%);
+}
+
+/* sticky navbar */
+.main {
+    position: sticky;
+    align-self: start;
+    top: 0;
+}
+.page {
+    position: sticky;
+    align-self: start;
+    top: 52px;
+}
+
+/* main navbar placement */
+.main {
+    list-style: none;
+}
+
+.main ul {
+    display: flex;
+    justify-content: center;
+}
+
+.main li {
+    display: inline-block;
+    margin: auto;
+}
+
+/* page navbar placement */
+.page li {
+    margin-top: 20px;
+    font-size: 0.75em;
+}
+
+/* navbar list styling */
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    background-color: #272730;
+    font-size: 1.5em;
+}
+
+/* page navbar image styling */
+#nav_img {
+    width: 95%;
+}
+
+/* header styling */
+header {
+    background-color: #272730;
+}
+
+/* header image styling */
+header img{
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+}
+
+/* header styling */
+h1 {
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #ffffff;
+    font-size: 3em;
+}
+
+h2 {
+    color: #6210fa;
+}
+
+h3 {
+    color: #d81dd8;
+}
+
+/* changing sizes for mobile */
+@media only screen and (max-width: 580px) {
+    body {
+        font-size: 0.75em;
+    }
+
+    /* Remove page navigation */
+    .page {
+        display: none;
+    }
+
+    /* Header image lower max height */
+    header img {
+        max-height: 120px;
+    }
+}
