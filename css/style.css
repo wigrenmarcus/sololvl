@@ -32,7 +32,7 @@ section img {
     float: left;
     margin-right: 10px;
     border: solid;
-    border-color: #6210fa;
+    border-color: #984bf6;
     border-width: 4px;
     border-radius: 8px;
 }
@@ -146,7 +146,7 @@ h1 {
 }
 
 h2 {
-    color: #6210fa;
+    color: #984bf6;
 }
 
 h3 {
